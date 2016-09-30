@@ -42,8 +42,10 @@
             <TextView
                 android:layout_height="50dp"
                 android:layout_width="50dp"
-                android:text="SCORE"
+                android:lines="2"
+                android:text="SCORE:\n 2048\n"
                 android:textColor="@color/text_white"
+                android:textSize="20sp"
                 android:background="@drawable/tags_rounded_corners"
                 android:textAlignment="center"
                 android:layout_weight="5"
@@ -53,14 +55,16 @@
             <TextView
                 android:layout_height="50dp"
                 android:layout_width="50dp"
-                android:text="BEST"
+                android:lines="2"
+                android:text="BEST:\n 2048\n"
                 android:textColor="@color/text_white"
+                android:textSize="20sp"
                 android:background="@drawable/tags_rounded_corners"
                 android:textAlignment="center"
                 android:layout_weight="5"
                 android:layout_marginLeft="2dp"
                 />
-            <T
+
 
         </LinearLayout>
 
