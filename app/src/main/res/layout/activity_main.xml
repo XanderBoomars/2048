@@ -5,20 +5,15 @@
     android:background="#FAF8EF"
     tools:context="com.example.xander.a2048.MainActivity">
 
-    <!-- The primary full-screen view. This can be replaced with whatever view
-         is needed to present your content, e.g. VideoView, SurfaceView,
-         TextureView, etc. -->
 
-
-    <!-- This FrameLayout insets its children based on system windows using
-         android:fitsSystemWindows. -->
-    <FrameLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         android:fitsSystemWindows="true">
 
         <LinearLayout
-            android:id="@+id/fullscreen_content_controls"
+            android:id="@+id/first_row"
             style="?metaButtonBarStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -68,11 +63,61 @@
 
         </LinearLayout>
 
+        <LinearLayout
+            android:id="@+id/second_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:background="@drawable/tags_rounded_corners"
+                android:text="redo"
+                android:id="@+id/redo_button"
+                android:textColor="@color/text_white"
+                android:textSize="20sp"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:background="@drawable/tags_rounded_corners"
+                android:text="reset"
+                android:id="@+id/reset_button"
+                android:textColor="@color/text_white"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                />
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:background="@drawable/tags_rounded_corners"/>
+
+            
+            
+            
+            
+            
+        </LinearLayout>
 
 
 
 
 
-    </FrameLayout>
+
+    </LinearLayout>
 
 </FrameLayout>
