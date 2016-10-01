@@ -95,23 +95,26 @@
 
         </LinearLayout>
         
-        <LinearLayout
+        <RelativeLayout
+            android:id="@+id/playingfield_relativelayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="5dp">
-            
+
             <View
+                android:id="@+id/background_playingfield"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:scaleType="fitCenter"
-                android:background="@drawable/tags_rounded_corners"/>
+                android:layout_height="match_parent"
+                android:background="@drawable/tags_rounded_corners"
+                android:layout_centerInParent="true"
+                />
 
             
             
             
             
             
-        </LinearLayout>
+        </RelativeLayout>
 
 
 
